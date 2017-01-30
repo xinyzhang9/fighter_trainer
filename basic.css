@@ -2,7 +2,7 @@
                       font-family: myFirstFont;
                       src: url(vag1.ttf);
                   }
-                  
+
 @font-face {
     font-family: 'iec_symbols_unicoderegular';
     src: url('Unicode_IEC_symbol.eot');
@@ -143,12 +143,10 @@ li{
 li:nth-child(-n+14):nth-child(n+1){
       width:30px;
       height:15px;
-      padding-bottom: 4px;
-      font-size: 8px;
+      font-size: 7px;
 }
 li:nth-child(-n+27):nth-child(n+16){
-      /*box-sizing: border-box;
-      padding-top: 4px;*/
+
 }
 li:nth-child(-n+26):nth-child(n+15) span,li:nth-child(27) span,li:nth-child(40) span,li:nth-child(41) span,li:nth-child(42) span,li:nth-child(53) span,li:nth-child(54) span,li:nth-child(-n+66):nth-child(n+64) span{
       display: block;
@@ -183,7 +181,7 @@ li:nth-child(76){
 }
 li:nth-child(78){
       position: absolute;
-      bottom: 22px;
+      bottom: 20px;
       right:38px;
 }
 .touch{
@@ -195,4 +193,125 @@ li:nth-child(78){
       left: 200px;
       border-radius: 8px;
 }
+#f1,#f2,#f3,#f4,#f5,#f6,#f7,#f8,#f9,#f10,#f11,#f12{
+      font-size: 8px;
+      position: relative;
+      bottom: 4px;
+}
+#delete{
+      font-size: 8px;
+      position: relative;
+      top: 6px;
+      left: 6px;
+}
+#tab{
+      font-size: 8px;
+      position: relative;
+      top: 6px;
+      right: 10px;
+}
+#dot{
+      font-size: 8px;
+      position: relative;
+      bottom: 6px;
+      right: 4px;
+}
+#caps{
+      font-size: 8px;
+      position: relative;
+      top: 6px;
+      right: 8px;
+}
+#power{
+      font-size: 8px;
+      position: relative;
+      bottom: 6px;
+}
+#esc{
+      position: relative;
+      bottom: 6px;
+      font-size: 8px;
+}
 
+#up,#down,#left,#right{
+      font-size: 6px;
+      position: relative;
+      bottom: 8px;
+}
+
+#shift-left{
+      font-size: 8px;
+      position: relative;
+      top: 6px;
+      right: 24px;
+}
+#shift-right{
+      font-size: 8px;
+      position: relative;
+      top: 6px;
+      left: 24px;
+}
+
+#enter-li span,#option-left-li span,#command-left-li span,#command-right-li span,#option-right-li span{
+      display: block;
+      margin-top: 5px;
+      line-height: 0.5
+}
+
+#enter{
+      font-size: 7px;
+      position: relative;
+      top: 2px;
+      left: 16px;
+}
+#return{
+      font-size: 10px;
+      position: relative;
+      top: 5px;
+      left: 12px;
+}
+#fn{
+      font-size: 8px;
+      position: relative;
+      top: 8px;
+      right: 6px;
+}
+#control{
+      font-size: 8px;
+      position: relative;
+      top: 8px;
+}
+#alt-left{
+      font-size: 8px;
+      position: relative;
+      top: 2px;
+      right: 6px;
+}
+#alt-right{
+      font-size: 8px;
+      position: relative;
+      top: 2px;
+      left: 6px;
+}
+#option-left,#option-right{
+      font-size: 8px;
+      position: relative;
+      top: 8px;
+}
+#command-left,#command-right{
+      font-size: 8px;
+      position: relative;
+      top: 6px;
+}
+#connect-left{
+      font-size: 12px;
+      position: relative;
+      top: 2px;
+      left: 12px;
+}
+#connect-right{
+      font-size: 12px;
+      position: relative;
+      top: 2px;
+      right: 12px;
+}
