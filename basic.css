@@ -30,7 +30,7 @@ kbd.keyboard-key {
             border: 1px solid #aaa;
             -moz-border-radius: 2px;
             -webkit-border-radius: 2px;
-            border-radius: 2px;
+            border-radius: 20%;
             -moz-box-shadow: 1px 2px 2px #ddd;
             -webkit-box-shadow: 1px 2px 2px #ddd;
             box-shadow: 1px 2px 2px #ddd;
@@ -196,7 +196,7 @@ li:nth-child(78){
 #f1,#f2,#f3,#f4,#f5,#f6,#f7,#f8,#f9,#f10,#f11,#f12{
       font-size: 8px;
       position: relative;
-      bottom: 4px;
+      bottom: 5px;
 }
 #delete{
       font-size: 8px;
@@ -265,9 +265,9 @@ li:nth-child(78){
       left: 16px;
 }
 #return{
-      font-size: 10px;
+      font-size: 9px;
       position: relative;
-      top: 5px;
+      top: 6px;
       left: 12px;
 }
 #fn{
@@ -315,3 +315,15 @@ li:nth-child(78){
       top: 2px;
       right: 12px;
 }
+#u0,#u1,#u2,#u3,#u4,#u5,#u6,#u7,#u8,#u9,#u10,#u11,#u12,#u13,#u14,#u15,#u16,#u17,#u18,#u19,#u20{
+      font-size: 12px;
+      position: relative;
+      top: 2px;
+}
+#d0,#d1,#d2,#d3,#d4,#d5,#d6,#d7,#d8,#d9,#d10,#d11,#d12,#d13,#d14,#d15,#d16,#d17,#d18,#d19,#d20{
+      font-size: 12px;
+      position: relative;
+      top: 3px;
+}
+
+
