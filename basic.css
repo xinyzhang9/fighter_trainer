@@ -1,3 +1,28 @@
+@font-face {
+                      font-family: myFirstFont;
+                      src: url(vag1.ttf);
+                  }
+                  
+@font-face {
+    font-family: 'iec_symbols_unicoderegular';
+    src: url('Unicode_IEC_symbol.eot');
+    src: url('Unicode_IEC_symbol.eot?#iefix') format('embedded-opentype'),
+         url('Unicode_IEC_symbol.woff2') format('woff2'),
+         url('Unicode_IEC_symbol.woff') format('woff'),
+         url('Unicode_IEC_symbol.ttf') format('truetype'),
+         url('Unicode_IEC_symbol.svg#iec_symbols_unicoderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.iec_power{
+  font-family: 'iec_symbols_unicoderegular';
+  font-style: normal;
+}
+
+html{
+      font-family: myFirstFont
+}
 body{
       text-align: center;
 }
@@ -16,7 +41,7 @@ kbd.keyboard-key {
             background-image: -webkit-linear-gradient(top, #eee, #f9f9f9, #eee);
             background-image: linear-gradient(top, #eee, #f9f9f9, #eee);
             padding: 4px 10px;
-            font-family: inherit;
+            font-family: myFirstFont;
             font-size: 1em;
             margin-left: 5px;
         }
@@ -49,7 +74,7 @@ kbd.keyboard-key {
       position: absolute;
       top:-20px; 
       left: -90px;
-       border-bottom: 2px solid rgb(0,0,0); 
+      border-bottom: 2px solid rgb(0,0,0); 
       background:-webkit-linear-gradient(top,rgb(210,210,210) 50%,rgb(255,255,255));
 }
 .blackbar{
@@ -86,7 +111,7 @@ ul,li{
       margin:0 auto;
       padding:0 auto;
       display: block;
-      font-family: "Vrinda";
+      font-family: myFirstFont;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -118,6 +143,8 @@ li{
 li:nth-child(-n+14):nth-child(n+1){
       width:30px;
       height:15px;
+      padding-bottom: 4px;
+      font-size: 8px;
 }
 li:nth-child(-n+27):nth-child(n+16){
       /*box-sizing: border-box;
@@ -168,3 +195,4 @@ li:nth-child(78){
       left: 200px;
       border-radius: 8px;
 }
+
