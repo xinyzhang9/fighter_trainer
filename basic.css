@@ -25,6 +25,7 @@ html{
 }
 body{
       text-align: center;
+      padding: 10px;
 }
 kbd.keyboard-key {
             border: 1px solid #aaa;
@@ -49,6 +50,8 @@ kbd.keyboard-key {
 
 #result{
       z-index: 10;
+      position: absolute;
+      top: 20px;
 }
 .board{
       margin: 0 auto;
@@ -252,7 +255,7 @@ li:nth-child(78){
       left: 24px;
 }
 
-#enter-li span,#option-left-li span,#command-left-li span,#command-right-li span,#option-right-li span{
+#k13 span,#k18 span,#k91 span,#k93 span,#option-right-li span{
       display: block;
       margin-top: 5px;
       line-height: 0.5
@@ -326,4 +329,10 @@ li:nth-child(78){
       top: 3px;
 }
 
+.active{
+      background-color: red;
+}
+.complete{
+      border: 2px solid green;
+}
 

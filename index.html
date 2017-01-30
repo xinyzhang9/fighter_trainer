@@ -16,8 +16,9 @@
     <div class="container">
         <div class="row-fluid">
             <div>
-                <p>Enter the following command to perform the skill move</p>
-                <p><kbd class="keyboard-key nowrap">↑</kbd><kbd class="keyboard-key nowrap">↑</kbd><kbd class="keyboard-key nowrap">↓</kbd><kbd class="keyboard-key nowrap">↓</kbd><kbd class="keyboard-key nowrap">←</kbd><kbd class="keyboard-key nowrap">→</kbd><kbd class="keyboard-key nowrap">←</kbd><kbd class="keyboard-key nowrap">→</kbd><kbd class="keyboard-key nowrap">B</kbd><kbd class="keyboard-key nowrap">A</kbd></p>
+                <p>Spin Kick(旋风腿)<kbd class="keyboard-key nowrap">↓</kbd><kbd class="keyboard-key nowrap">←</kbd><kbd class="keyboard-key nowrap">↓</kbd><kbd class="keyboard-key nowrap">→</kbd><kbd class="keyboard-key nowrap">A</kbd></p>
+
+                <p>Shoryuken(升龙拳)<kbd class="keyboard-key nowrap">↓</kbd><kbd class="keyboard-key nowrap">→</kbd><kbd class="keyboard-key nowrap">↓</kbd><kbd class="keyboard-key nowrap">→</kbd><kbd class="keyboard-key nowrap">D</kbd></p>
             </div>
         <div class="board">
         <div class="blackbar">
@@ -25,7 +26,7 @@
         </div>
         <div class="keyboard">
             <ul>
-                <li><span id = 'esc'>esc</span></li>
+                <li id = 'k27'><span id = 'esc'>esc</span></li>
                 <li><span id = 'f1'>F1</span></li>
                 <li><span id = 'f2'>F2</span></li>
                 <li><span id = 'f3'>F3</span></li>
@@ -39,79 +40,79 @@
                 <li><span id = 'f11'>F11</span></li>
                 <li><span id = 'f12'>F12</span></li>
                 <li ><span id = 'power' class="iec_power">&#x23FB;</span></li>
-                <li><span id = 'u0'>~</span><span id = 'd0'>`</span></li>
-                <li><span id = 'u1'>!</span><span id = 'd1'>1</span></li>
-                <li><span id = 'u2'>@</span><span id = 'd2'>2</span></li>
-                <li><span id = 'u3'>#</span><span id = 'd3'>3</span></li>
-                <li><span id = 'u4'>$</span><span id = 'd4'>4</span></li>
-                <li><span id = 'u5'>%</span><span id = 'd5'>5</span></li>
-                <li><span id = 'u6'>^</span><span id = 'd6'>6</span></li>
-                <li><span id = 'u7'>&amp;</span><span id = 'd7'>7</span></li>
-                <li><span id = 'u8'>*</span><span id = 'd8'>8</span></li>
-                <li><span id = 'u9'>(</span><span id = 'd9'>9</span></li>
-                <li><span id = 'u0'>)</span><span id = 'd0'>0</span></li>
-                <li><span id = 'u11'>&#8722;</span><span id = 'd11'>-</span></li>
-                <li><span id = 'u12'>+</span><span id = 'd12'>=</span></li>
-                <li><span id = 'delete'>delete</span></li>
+                <li id = 'k192'><span id = 'u0'>~</span><span id = 'd0'>`</span></li>
+                <li id = 'k49'><span id = 'u1'>!</span><span id = 'd1'>1</span></li>
+                <li id = 'k50'><span id = 'u2'>@</span><span id = 'd2'>2</span></li>
+                <li id = 'k51'><span id = 'u3'>#</span><span id = 'd3'>3</span></li>
+                <li id = 'k52'><span id = 'u4'>$</span><span id = 'd4'>4</span></li>
+                <li id = 'k53'><span id = 'u5'>%</span><span id = 'd5'>5</span></li>
+                <li id = 'k54'><span id = 'u6'>^</span><span id = 'd6'>6</span></li>
+                <li id = 'k55'><span id = 'u7'>&amp;</span><span id = 'd7'>7</span></li>
+                <li id = 'k56'><span id = 'u8'>*</span><span id = 'd8'>8</span></li>
+                <li id = 'k57'><span id = 'u9'>(</span><span id = 'd9'>9</span></li>
+                <li id = 'k48'><span id = 'u0'>)</span><span id = 'd0'>0</span></li>
+                <li id = 'k189'><span id = 'u11'>&#8722;</span><span id = 'd11'>-</span></li>
+                <li id = 'k187'><span id = 'u12'>+</span><span id = 'd12'>=</span></li>
+                <li id = 'k8'><span id = 'delete'>delete</span></li>
                 <li><span id = 'tab'>tab</span></li>
-                <li>Q</li>
-                <li>W</li>
-                <li>E</li>
-                <li>R</li>
-                <li>T</li>
-                <li>Y</li>
-                <li>U</li>
-                <li>I</li>
-                <li>O</li>
-                <li>P</li>
-                <li><span id = 'u13'>{</span><span id = 'd13'>[</span></li>
-                <li><span id = 'u14'>}</span><span id = 'd14'>]</span></li>
-                <li><span id = 'u15'>&#448;</span><span id = 'd15'>\</span></li>
-                <li><span id = 'dot'>&#9679;</span><span id = 'caps'>caps lock</span></li>
-                <li>A</li>
-                <li>S</li>
-                <li>D</li>
-                <li>F</li>
-                <li>G</li>
-                <li>H</li>
-                <li>J</li>
-                <li>K</li>
-                <li>L</li>
-                <li><span id = 'u16'>:</span><span id = 'd16'>;</span></li>
-                <li><span id = 'u17'>"</span><span id = 'd17'>'</span></li>
-                <li id = 'enter-li'><span id = 'enter'>enter</span><span id = 'return'>return</span></li>
-                <li><span id = 'shift-left'>shift</span></li>
-                <li>Z</li>
-                <li>X</li>
-                <li>C</li>
-                <li>V</li>
-                <li>B</li>
-                <li>N</li>
-                <li>M</li>
-                <li><span id = 'u18'>&lt;</span><span id = 'd18'>,</span></li>
-                <li><span id = 'u19'>&gt;</span><span id = 'd19'>.</span></li>
-                <li><span id = 'u20'>?</span><span id = 'd20'>/</span></li>
+                <li id = 'k81'>Q</li>
+                <li id = 'k87'>W</li>
+                <li id = 'k69'>E</li>
+                <li id = 'k82'>R</li>
+                <li id = 'k84'>T</li>
+                <li id = 'k89'>Y</li>
+                <li id = 'k85'>U</li>
+                <li id = 'k73'>I</li>
+                <li id = 'k79'>O</li>
+                <li id = 'k80'>P</li>
+                <li id = 'k219'><span id = 'u13'>{</span><span id = 'd13'>[</span></li>
+                <li id = 'k221'><span id = 'u14'>}</span><span id = 'd14'>]</span></li>
+                <li id = 'k220'><span id = 'u15'>&#448;</span><span id = 'd15'>\</span></li>
+                <li id = 'k20'><span id = 'dot'>&#9679;</span><span id = 'caps'>caps lock</span></li>
+                <li id = 'k65'>A</li>
+                <li id = 'k83'>S</li>
+                <li id = 'k68'>D</li>
+                <li id = 'k70'>F</li>
+                <li id = 'k71'>G</li>
+                <li id = 'k72'>H</li>
+                <li id = 'k74'>J</li>
+                <li id = 'k75'>K</li>
+                <li id = 'k76'>L</li>
+                <li id = 'k186'><span id = 'u16'>:</span><span id = 'd16'>;</span></li>
+                <li id = 'k222'><span id = 'u17'>"</span><span id = 'd17'>'</span></li>
+                <li id = 'k13'><span id = 'enter'>enter</span><span id = 'return'>return</span></li>
+                <li id = 'k16'><span id = 'shift-left'>shift</span></li>
+                <li id = 'k90'>Z</li>
+                <li id = 'k88'>X</li>
+                <li id = 'k67'>C</li>
+                <li id = 'k86'>V</li>
+                <li id = 'k66'>B</li>
+                <li id = 'k78'>N</li>
+                <li id = 'k77'>M</li>
+                <li id = 'k188'><span id = 'u18'>&lt;</span><span id = 'd18'>,</span></li>
+                <li id = 'k190'><span id = 'u19'>&gt;</span><span id = 'd19'>.</span></li>
+                <li id = 'k191'><span id = 'u20'>?</span><span id = 'd20'>/</span></li>
                 <li><span id = 'shift-right'>shift</span></li>
                 <li><span id = 'fn'>fn</span></li>
-                <li><span id = 'control'>control</span></li>
-                <li id = 'option-left-li'><span id = 'alt-left'>alt</span><span id = 'option-left'>option</span></li>
-                <li id = 'command-left-li'><span id = 'connect-left'>&#8984;</span><span id = 'command-left'>command</span></li>
-                <li></li>
-                <li id = 'command-right-li'><span id = 'connect-right'>&#8984;</span><span id = 'command-right'>command</span></li>
+                <li id = 'k17'><span id = 'control'>control</span></li>
+                <li id = 'k18'><span id = 'alt-left'>alt</span><span id = 'option-left'>option</span></li>
+                <li id = 'k91'><span id = 'connect-left'>&#8984;</span><span id = 'command-left'>command</span></li>
+                <li id = 'k32'></li>
+                <li id = 'k93'><span id = 'connect-right'>&#8984;</span><span id = 'command-right'>command</span></li>
                 <li id = 'option-right-li'><span id = 'alt-right'>alt</span><span id = 'option-right'>option</span></li>
-                <li><span id = 'left'>&#9664;</span></li>
-                <li><span id = 'down'>&#9660;</span></li>
-                <li><span id = 'right'>&#9654;</span></li>
-                <li ><span id = 'up'>&#9650;</span></li>
+                <li id = 'k37'><span id = 'left'>&#9664;</span></li>
+                <li id = 'k40'><span id = 'down'>&#9660;</span></li>
+                <li id = 'k39'><span id = 'right'>&#9654;</span></li>
+                <li id = 'k38'><span id = 'up'>&#9650;</span></li>
             </ul>
         </div>
         <div class="touch">
             
         </div>
     </div>
-    <div style="position: absolute; left: 50%;">
-    <div style="position: relative; left: -50%;">
-     <div id = 'result'></div>
+    <div id = 'result' style="position: absolute; left: 45%;">
+    <div style="position: relative; left: -45%;">
+     <div></div>
     </div>
   </div>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
