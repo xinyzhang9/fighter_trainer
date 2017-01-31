@@ -146,7 +146,7 @@ $(function () {
         })
         .filter(function (equal) { return equal; }) 
         .subscribe(function () {
-            result.html("<image src = 'gif/action2.gif' />").show().fadeOut(4300);   // print the result
+            result.html("<image src = 'gif/action2.gif' />").show().fadeOut(4300);
         });
 
     // action3
@@ -158,7 +158,7 @@ $(function () {
         })
         .filter(function (equal) { return equal; }) 
         .subscribe(function () {
-            result.html("<image src = 'gif/action3.gif' />").show().fadeOut(2600);   // print the result
+            result.html("<image src = 'gif/action3.gif' />").show().fadeOut(2600);
         });
 
     // print last 10 keys
@@ -170,7 +170,7 @@ $(function () {
             }
             recentKeys.push(x);
             var res = renderKeys(recentKeys);
-            recentKeysDOM.html(res).show().fadeOut(2000);   // print the result
+            recentKeysDOM.html(res).show().fadeOut(2000);
         });
 
 

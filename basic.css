@@ -328,16 +328,12 @@ li:nth-child(78){
       position: relative;
       top: 3px;
 }
-
 .active{
       background-color: red;
 }
-
 .capslock{
       color: lightgreen;
 }
-
-
 #recentKeysDOM{
       margin-top: 15px;
 }
