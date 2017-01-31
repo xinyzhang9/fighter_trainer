@@ -332,9 +332,11 @@ li:nth-child(78){
 .active{
       background-color: red;
 }
-.complete{
-      border: 2px solid green;
+
+.capslock{
+      color: lightgreen;
 }
+
 
 #recentKeysDOM{
       margin-top: 15px;

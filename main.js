@@ -8,7 +8,9 @@ $(function () {
     var konami3 = Rx.Observable.fromArray(action3);
     var result = $('#result');
     var recentKeysDOM = $('#recentKeysDOM');
+    var caps_state = $('#dot');
     var recentKeys = [];
+    var capslock = false;
     var map = new Map();
 
     function init(){
@@ -41,6 +43,7 @@ $(function () {
         map.set(17,'Ctrl');
         map.set(18,'Alt');
         map.set(91,'Command');
+        map.set(93,'Command');
         map.set(32,'Space');
         map.set(37,'&#9664;');
         map.set(38,'&#9650;');
@@ -104,6 +107,23 @@ $(function () {
           }
         );
 
+    // capslock
+    $(document).keyupAsObservable()
+        .map(function (e) { return e.keyCode; })
+        .filter(function(x){ return x === 20; })
+        .subscribe(
+            function (x) {
+                // activeKey(x);
+                if(!capslock){
+                    caps_state.addClass('capslock');
+                    capslock = true;
+                }else{
+                    caps_state.removeClass('capslock');
+                    capslock = false;
+                }
+          }
+        );
+
     // action1
     $(document).keyupAsObservable()
         .map(function(e){ return e.keyCode; })
@@ -145,13 +165,13 @@ $(function () {
     $(document).keyupAsObservable()
         .map(function (e) { return e.keyCode; })                     
         .subscribe(function (x) {
-            if(recentKeys.length < 10){
-                recentKeys.push(x);
-            }else{
+            if(recentKeys.length >= 10){
                 recentKeys.shift();
-                recentKeys.push(x);
             }
+            recentKeys.push(x);
             var res = renderKeys(recentKeys);
             recentKeysDOM.html(res).show().fadeOut(2000);   // print the result
         });
+
+
 });
