@@ -15,4 +15,4 @@ Rxjs: Interaction with user's keyboard events
 https://xinyzhang9.github.io/fighter_trainer/
 
 ## Screenshot
-
+![alt tag](https://raw.githubusercontent.com/xinyzhang9/fighter_trainer/master/screen.png)
