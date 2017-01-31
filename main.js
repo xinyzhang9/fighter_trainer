@@ -2,14 +2,15 @@
 $(function () {
     var action1 = [40,37,40,39,65];
     var action2 = [40,39,40,39,68];
+    var action3 = [38,37,38,39,65];
     var konami1 = Rx.Observable.fromArray(action1);
     var konami2 = Rx.Observable.fromArray(action2);
+    var konami3 = Rx.Observable.fromArray(action3);
     var result = $('#result');
     var recentKeysDOM = $('#recentKeysDOM');
     var recentKeys = [];
     var map = new Map();
 
-    // utility functions
     function init(){
         map.set(27,'Esc');
         map.set(48,'0');
@@ -76,6 +77,7 @@ $(function () {
     function keyToChar(key){
         return map.get(key);
     }
+
     function activeKey(c){
         var key = $('#k'+c);
         key.addClass('active');
@@ -90,7 +92,6 @@ $(function () {
         })
     }
 
-    // initialize map
     init();
 
     // activate key on keyboard
@@ -126,6 +127,18 @@ $(function () {
         .filter(function (equal) { return equal; }) 
         .subscribe(function () {
             result.html("<image src = 'action2.gif' />").show().fadeOut(4300);   // print the result
+        });
+
+    // action3
+    $(document).keyupAsObservable()
+        .map(function (e) { return e.keyCode; }) 
+        .windowWithCount(5, 1)                    
+        .selectMany(function (x) {                 
+            return x.sequenceEqual(konami3);
+        })
+        .filter(function (equal) { return equal; }) 
+        .subscribe(function () {
+            result.html("<image src = 'action3.gif' />").show().fadeOut(2600);   // print the result
         });
 
     // print last 10 keys
