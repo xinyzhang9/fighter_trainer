@@ -113,7 +113,7 @@ $(function () {
         })
         .filter(function(equal){return equal; })
         .subscribe(function(){
-            result.html("<image src = 'action1.gif' />").show().fadeOut(8000);
+            result.html("<image src = 'gif/action1.gif' />").show().fadeOut(8000);
             activeKey(0);
         })
 
@@ -126,7 +126,7 @@ $(function () {
         })
         .filter(function (equal) { return equal; }) 
         .subscribe(function () {
-            result.html("<image src = 'action2.gif' />").show().fadeOut(4300);   // print the result
+            result.html("<image src = 'gif/action2.gif' />").show().fadeOut(4300);   // print the result
         });
 
     // action3
@@ -138,7 +138,7 @@ $(function () {
         })
         .filter(function (equal) { return equal; }) 
         .subscribe(function () {
-            result.html("<image src = 'action3.gif' />").show().fadeOut(2600);   // print the result
+            result.html("<image src = 'gif/action3.gif' />").show().fadeOut(2600);   // print the result
         });
 
     // print last 10 keys
