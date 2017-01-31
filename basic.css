@@ -183,9 +183,9 @@ li:nth-child(76){
       margin-top: 19px;
 }
 li:nth-child(78){
-      position: absolute;
-      bottom: 20px;
-      right:38px;
+      position: relative;
+      bottom: 55px;
+      left:36px;
 }
 .touch{
       position: absolute;
