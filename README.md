@@ -1,4 +1,4 @@
-# fighter_trainer
+# Fighter_trainer
 > Similation of Macbook keyboard and perform as a trainer of street fighters.
 
 ## Technology
